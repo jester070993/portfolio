@@ -8,5 +8,17 @@ h1 {
 	text-transform: uppercase;
 	font-size: 20rem;
 	font-family: 'Staatliches', cursive;
+	text-shadow: 2px 2px 2px magenta;
 }
 
+p {
+	color: white;
+	text-transform: uppercase;
+	text-decoration: underline;
+	transition: transform .5s ease-out;
+}
+
+p:hover {
+	transform: rotateY(180deg) ;
+	perspective: 700px;
+}
