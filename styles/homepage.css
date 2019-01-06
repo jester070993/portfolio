@@ -12,7 +12,7 @@ h1 {
 }
 
 p {
-	color: white;
+	color: pink;
 	text-transform: uppercase;
 	text-decoration: underline;
 	transition: transform .5s ease-out;
