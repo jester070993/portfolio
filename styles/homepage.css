@@ -1,10 +1,12 @@
+body{
+	background-color: black;
+}
+
 h1 {
-	border: 2px solid red;
+	color: white;
 	text-align: center;
 	text-transform: uppercase;
+	font-size: 20rem;
+	font-family: 'Staatliches', cursive;
 }
 
-h2 {
-		text-transform: uppercase;
-
-}
