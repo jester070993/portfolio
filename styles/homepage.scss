@@ -1,58 +1,57 @@
 /*base styles*/
 $nameColor: goldenrod;
-$primary-color: green;
-$complement: complement ($primary-color);
+$primary-color: crimson;
+$inverted: invert($primary-color);
+$complement: complement($nameColor);
 
-
+@mixin font-style{
+    text-transform: uppercase;
+    font-family: 'Staatliches', cursive;
+}
 
 html{
   height: 100vh;
-  
 }
-body{
-  background-color: #333;
-  display: flex;
-  flex-direction: column;
-    height: 100vh;
-      background-image: url(https://images.unsplash.com/photo-1501492751416-51484c0d911f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80);
-  background-size:  cover;
 
+body{
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1501492751416-51484c0d911f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80);
+    background-size:  cover;
 }
 
 section{
-  flex-grow: 1;
+    flex-grow: 1;
 }
 
 footer{
-  align-self: center;
+    align-self: center;
 }
 h4{
-  color: grey;
-  letter-spacing: .4rem;
-  font: "times new roman";
-  font-size: 1.2rem;
+    color: grey;
+    letter-spacing: .4rem;
+    font: "times new roman";
+    font-size: 1.2rem;
 }
 
-
-
-
 .flex{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    perspective: 700px;
 }
 
 h1 {
-  color: $complement;
-  text-transform: uppercase;
-  margin-top: 0;
-  
-  text-align: center;
-  font-size: 8rem;
-  letter-spacing: 1rem;
-  font-family: 'Staatliches', cursive;
-  text-shadow: 5px 5px 30px $nameColor;
-  margin-bottom: 3rem;
+    color: $complement;
+    margin-top: 0;
+    text-align: center;
+    font-size: 8rem;
+    letter-spacing: 1rem;
+    text-shadow: 5px 5px 30px $nameColor;
+    margin-bottom: 3rem;
+    @include font-style
 }
 
 h3{
@@ -69,25 +68,29 @@ p {
   color: white;
   font-size: 5rem;
   display: inline-block;
-    font-family: 'Staatliches', cursive;
   margin-top: 5rem;
   letter-spacing: .2rem;
-  text-transform: uppercase;
   text-decoration: underline;
   transition: transform .5s ease-out;
+  &:hover{
+     transform-style: preserve-3d;
+     transform: rotateX(90deg) rotate(45deg);
+
+       // perspective(700px) rotateX(90deg) rotate(45deg);
+
+
+
+     // rotateY(90deg) ;
+     // perspective: 1000px;
+
+  }
+  @include font-style;
 }
-
-
-h4{
-  
-}
-
-
-
-p:hover {
-  transform: rotateY(180deg) ;
-  perspective: 700px;
-}
+// OLD CSS
+// p:hover {
+//   transform: rotateY(180deg) ;
+//   perspective: 700px;
+// }
 
 a{
   color: white;
@@ -96,7 +99,7 @@ a{
 i{
   color: $nameColor;
   font-size: 5rem;
-  margin: 0 2rem
+  margin: 0 2rem;
 }
 
 .github:hover,
@@ -104,7 +107,6 @@ i{
 .twitter:hover,
 .resume:hover{
   transition: transform .4s ;
-
 }
 
 .github:hover,
@@ -135,7 +137,7 @@ i{
 }
 
 .fa-file:hover{
-color: #aab8c2
+color: #aab8c2;
 }
 
 
