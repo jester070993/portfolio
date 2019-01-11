@@ -4,9 +4,14 @@ $primary-color: crimson;
 $inverted: invert($primary-color);
 $complement: complement($nameColor);
 
+$new-color: rgba($complement, .3);
+$saturate: saturate($new-color, 90%);
+$darken: darken($saturate, 50%);
+
 @mixin font-style{
     text-transform: uppercase;
     font-family: 'Staatliches', cursive;
+    color: $darken;
 }
 
 html{
@@ -44,7 +49,6 @@ h4{
 }
 
 h1 {
-    color: $complement;
     margin-top: 0;
     text-align: center;
     font-size: 8rem;
@@ -65,7 +69,6 @@ h3{
 }
 
 p {
-  color: white;
   font-size: 5rem;
   display: inline-block;
   margin-top: 5rem;
@@ -75,14 +78,9 @@ p {
   &:hover{
      transform-style: preserve-3d;
      transform: rotateX(90deg) rotate(45deg);
-
        // perspective(700px) rotateX(90deg) rotate(45deg);
-
-
-
      // rotateY(90deg) ;
      // perspective: 1000px;
-
   }
   @include font-style;
 }
@@ -102,26 +100,21 @@ i{
   margin: 0 2rem;
 }
 
-.github:hover,
-.linkedin:hover,
-.twitter:hover,
-.resume:hover{
-  transition: transform .4s ;
-}
-
-.github:hover,
-.linkedin:hover,
-.twitter:hover,
-.resume:hover
-{
-  transform: scale(1.2);
+.github,
+.linkedin,
+.twitter,
+.resume{
+  transition: transform .4s;
+  &:hover{
+      transform: scale(1.2);
+  }
 }
 
 .fa-github-square,
 .fa-linkedin,
 .fa-twitter-square,
 .fa-file{
-  transition: color .4s;
+  transition: color 1s;
 }
 
 .fa-github-square:hover{
@@ -140,7 +133,6 @@ i{
 color: #aab8c2;
 }
 
-
 .flex-icons{
   display: flex;
   justify-content: center;
@@ -150,9 +142,6 @@ color: #aab8c2;
   .container {
     max-width: 540px;
   }
-
-
-
 }
 
 @media (min-width: 768px) {

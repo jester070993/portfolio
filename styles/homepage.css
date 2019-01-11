@@ -35,7 +35,6 @@ h4 {
 }
 
 h1 {
-  color: #2055da;
   margin-top: 0;
   text-align: center;
   font-size: 8rem;
@@ -44,6 +43,7 @@ h1 {
   margin-bottom: 3rem;
   text-transform: uppercase;
   font-family: "Staatliches", cursive;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 h3 {
@@ -57,7 +57,6 @@ h3 {
 }
 
 p {
-  color: white;
   font-size: 5rem;
   display: inline-block;
   margin-top: 5rem;
@@ -66,6 +65,7 @@ p {
   transition: transform 0.5s ease-out;
   text-transform: uppercase;
   font-family: "Staatliches", cursive;
+  color: rgba(0, 0, 0, 0.3);
 }
 p:hover {
   transform-style: preserve-3d;
@@ -82,13 +82,12 @@ i {
   margin: 0 2rem;
 }
 
-.github:hover,
-.linkedin:hover,
-.twitter:hover,
-.resume:hover {
+.github,
+.linkedin,
+.twitter,
+.resume {
   transition: transform 0.4s;
 }
-
 .github:hover,
 .linkedin:hover,
 .twitter:hover,
@@ -100,7 +99,7 @@ i {
 .fa-linkedin,
 .fa-twitter-square,
 .fa-file {
-  transition: color 0.4s;
+  transition: color 1s;
 }
 
 .fa-github-square:hover {
