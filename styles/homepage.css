@@ -72,10 +72,6 @@ p:hover {
   transform: rotateX(90deg) rotate(45deg);
 }
 
-a {
-  color: white;
-}
-
 i {
   color: goldenrod;
   font-size: 5rem;
@@ -105,15 +101,12 @@ i {
 .fa-github-square:hover {
   color: #f5f5f5;
 }
-
 .fa-linkedin:hover {
   color: #0077b5;
 }
-
 .fa-twitter-square:hover {
   color: #1da1f2;
 }
-
 .fa-file:hover {
   color: #aab8c2;
 }
