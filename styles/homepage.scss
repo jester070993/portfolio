@@ -103,7 +103,7 @@ h3{
     font-weight: 1;
     margin-top: 4rem;
     font-size: 1.2rem;
-    animation: email 1.2s .5s ease-out;
+    animation: email 1.2s 2.1s ease-out;
 }
 
 @keyframes Iam {
@@ -126,21 +126,9 @@ p {
   text-decoration: underline;
   transform: translateY(-180px);
   animation: Iam .5s forwards;
-  // transition: transform .5s ease-out;
-  // &:hover{
-  //    transform-style: preserve-3d;
-  //    transform: rotateX(90deg) rotate(45deg);
-  //      // perspective(700px) rotateX(90deg) rotate(45deg);
-  //    // rotateY(90deg) ;
-  //    // perspective: 1000px;
-  // }
   @include font-style;
 }
-// OLD CSS
-// p:hover {
-//   transform: rotateY(180deg) ;
-//   perspective: 700px;
-// }
+
 i{
   color: $nameColor;
   font-size: 5rem;

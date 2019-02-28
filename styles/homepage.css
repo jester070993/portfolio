@@ -79,7 +79,7 @@ h3 {
   font-weight: 1;
   margin-top: 4rem;
   font-size: 1.2rem;
-  animation: email 1.2s 0.5s ease-out;
+  animation: email 1.2s 2.1s ease-out;
 }
 
 @keyframes Iam {
