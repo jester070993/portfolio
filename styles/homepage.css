@@ -16,6 +16,21 @@ section {
   flex-grow: 1;
 }
 
+@keyframes nameOutline {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+.image {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+  stroke: goldenrod;
+  stroke-dashoffset: 720;
+  stroke-dasharray: 720;
+  animation: nameOutline 2s linear forwards;
+}
+
 footer {
   align-self: center;
 }
@@ -43,9 +58,19 @@ h1 {
   margin-bottom: 3rem;
   text-transform: uppercase;
   font-family: "Staatliches", cursive;
-  color: rgba(0, 0, 0, 0.3);
 }
 
+@keyframes email {
+  50% {
+    transform: translate3d(0, -10px, 0);
+  }
+  80% {
+    transform: translate3d(0, 10px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
 h3 {
   font-family: "Staatliches", cursive;
   text-align: center;
@@ -54,22 +79,30 @@ h3 {
   font-weight: 1;
   margin-top: 4rem;
   font-size: 1.2rem;
+  animation: email 1.2s 0.5s ease-out;
 }
 
+@keyframes Iam {
+  50% {
+    transform: translateY(12px);
+  }
+  80% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 p {
   font-size: 5rem;
   display: inline-block;
   margin-top: 5rem;
   letter-spacing: 0.2rem;
   text-decoration: underline;
-  transition: transform 0.5s ease-out;
+  transform: translateY(-180px);
+  animation: Iam 0.5s forwards;
   text-transform: uppercase;
   font-family: "Staatliches", cursive;
-  color: rgba(0, 0, 0, 0.3);
-}
-p:hover {
-  transform-style: preserve-3d;
-  transform: rotateX(90deg) rotate(45deg);
 }
 
 i {
