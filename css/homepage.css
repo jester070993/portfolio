@@ -21,4 +21,19 @@
   margin: 3rem 0;
 }
 
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  padding-top: 2rem;
+}
+
+svg {
+  width: 100px;
+  height: 100px;
+}
+
 /*# sourceMappingURL=homepage.css.map */
