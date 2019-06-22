@@ -19,8 +19,11 @@
 
 }
 
-.navItem{
-	margin: 3rem 0;
+.navItem, .logo{
+	// margin: 3rem 0;
+	display: flex;
+    justify-content: center;
+	
 }
 
 header{
@@ -30,4 +33,15 @@ header{
 svg{
 	width: 100px;
 	height: 100px;
+}
+
+li{
+	width: 100%;
+}
+
+
+a{
+	width: 100%;
+	text-align: center;
+	line-height: 4.5;
 }
