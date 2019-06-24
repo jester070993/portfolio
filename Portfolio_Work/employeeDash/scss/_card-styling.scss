@@ -1,0 +1,57 @@
+//styling for the individual cards/flex-wrapping grid
+.card-list{
+	list-style: none;
+	color: #818181;
+	font-size: 1.1rem;
+	// display: block;
+	padding-left: 2rem;
+	font-family: $fontStack
+}
+
+.user{
+	display: flex;
+	align-items: center;
+	font-size: 1rem;
+}
+
+.radius{
+	border-radius: 50%;	
+	border: 2px solid white;
+	box-shadow: 1px 1px 10px grey;
+	transition: transform .2s;
+	max-width: 52px;
+		margin: 0 auto;
+
+
+}
+
+.name{
+	color: #2D2D2D;
+	font-size: 1.4rem;
+	font-weight: bold;
+	margin-bottom: 1.5rem;
+	display: block;
+	padding-top: 1rem;
+
+
+}
+
+.city{
+	margin-top: 1rem;
+	display: block;
+	padding-bottom: 1rem;
+}
+
+.email{
+	font-size: 1.3rem;
+	display: block;
+}
+
+.givenLayout{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+
+

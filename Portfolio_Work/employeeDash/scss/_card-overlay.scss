@@ -1,0 +1,105 @@
+// #modalBox{
+// 	position: absolute;
+//     width: 100%;
+// 	height: 100%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// 	background-color: rgba(0,0,0, .7);
+// 	z-index: 1;
+// 	display: none;
+// 	overflow: auto;
+// }
+
+#greyBox{
+	width: 50%;
+	background-color: white;
+	display: flex;
+    justify-content: center;
+    border: 2px solid black;
+	border-radius: 15%;
+	@include desktop{
+		width: 30%;
+	}
+}
+
+#modalBox{
+	position: fixed;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+ 	background-color: rgba(0,0,0, .7);
+ 	top: 0;
+ 	overflow: auto;
+
+
+}
+
+// #greyBox{
+// 	width: 300px;
+// 	background-color: green;
+// 	height: 500px;
+
+// }
+
+.icon{
+	color: $fontGrey;
+	margin-top: 5px;
+	padding-right: 5px;
+	cursor: pointer;
+	font-size: 2rem;
+	&:hover{
+		color: rgb(216,191,216, .9)
+	}
+}
+
+.iconContainer{
+	width: 100%;
+	text-align: center;
+	padding-top: 1rem;
+
+
+
+}
+
+
+.overlayInfo{
+	list-style: none;
+}
+
+.cardLayout{
+	display: flex;
+	flex-direction: column;
+	
+}
+
+
+
+
+.phone{
+	margin-top: .5rem;
+	display: none;
+}
+
+
+
+.extraInfo{
+	display: none;
+	list-style: none;
+	font-size: 1.2rem;
+	padding: 0 1.5rem;
+	padding-bottom: 1.5rem;
+	color: $fontGrey;
+	font-family: $fontStack;
+	& > li{
+		padding-top: 1rem;
+	}
+}
+
+hr{
+	width: 95%;
+	color: $fontGrey;
+	margin: 0 auto;
+}

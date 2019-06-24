@@ -147,3 +147,86 @@
 //     translateX: 0
 // })
 // })
+
+$(".navul").hide();
+$(".svgArrow").hide();
+
+
+
+const logo = document.querySelector(".logo")
+
+logo.addEventListener("click", () => {
+	$(".svgArrow").show();
+
+	$(".navul").slideToggle();
+
+})
+
+
+const animeWrapper = document.querySelectorAll(".animeWrapper")
+const iconWrapper = document.querySelectorAll(".iconWrapper")
+
+
+
+
+animeWrapper.forEach((animeWrapper) => {
+	animeWrapper.addEventListener("mouseenter", (e) => {
+		anime({
+			targets: animeWrapper.querySelector(".arrow"),
+			scale: 30,
+			easing: "easeInExpo",		
+			duration: 300
+
+		})
+	})
+	animeWrapper.addEventListener("mouseleave", (e) => {
+		anime({
+			targets: animeWrapper.querySelector(".arrow"),
+			scale: 1,
+			easing: "easeInOutExpo",
+			duration: 300
+		})
+	})
+})
+
+
+iconWrapper.forEach( wrapper => {
+	wrapper.addEventListener("mouseenter", () => {
+		anime({
+			targets: wrapper.querySelector("hr"),
+			scaleX: 20,
+			opacity: 1,
+			easing: "easeOutExpo",
+			duration: 350
+		})
+		
+		wrapper.addEventListener("mouseleave", () => {
+			anime({
+				targets: wrapper.querySelector("hr"),
+				scaleX: 0,
+				opacity: 0,
+				easing: "easeOutExpo",
+				duration: 350
+			})
+		})
+	})
+})
+
+
+
+
+
+
+
+
+// })
+// logo.addEventListener("click", () => {
+// 	anime({
+// 		targets: ".logo",
+//  		translateX: "400px", // -> from '28px' to '100%',
+// 		spring: "(1, 80, 10, 0)"
+// 	})
+	
+
+// })
+
