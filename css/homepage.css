@@ -61,11 +61,6 @@ li {
   align-items: center;
 }
 
-body {
-  height: 100vh;
-  background: darkgrey;
-}
-
 .jLetter:hover {
   fill: transparent;
   stroke: "black";
@@ -121,22 +116,57 @@ hr {
   align-items: center;
 }
 
-.container {
-  padding: 0 1rem;
-}
-
 #ghLink {
   color: black;
   font-weight: 300;
 }
 
+h1 {
+  font-size: 4rem;
+  margin: 2rem 10rem;
+  box-shadow: inset 0 0px 20px 0 rgba(59, 43, 91, 0.1);
+  padding-left: 4rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+h3 {
+  padding: 1rem 3rem;
+}
+
+.subtitle {
+  font-size: 2.3rem;
+}
+@media screen and (min-width: 1600px) {
+  .subtitle {
+    max-width: 75%;
+    padding-left: 6rem;
+  }
+}
+
 .projectImg {
+  border-top: 2px solid black;
+}
+
+.projectImg,
+.projectText {
   max-width: 400px;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.projectText {
+  text-align: center;
+  background: snow;
+  padding: 2.3rem 0.5rem;
+  height: 11rem;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
 }
 
 .projects {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .project {
@@ -144,10 +174,99 @@ hr {
   flex-direction: column;
   align-items: center;
   flex: 1;
+  margin: 1.6rem;
+  border-radius: 0 0 10% 10%;
+}
+
+.title {
+  text-decoration: underline;
+  padding: 2rem;
+}
+
+.projectBtns {
+  width: 400px;
+  background: snow;
+  text-align: center;
+  border-radius: 0 0 50% 50%;
+  padding-bottom: 2rem;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  box-shadow: 0 24px 25px 0 rgba(0, 0, 0, 0.19);
+}
+
+.repoBtn,
+.liveBtn {
+  background: none;
+  border: 1px solid black;
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+  z-index: 9;
+  transition: 0.5s;
+}
+.repoBtn::before,
+.liveBtn::before {
+  content: "";
+  position: absolute;
+  background-color: salmon;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  border-radius: 50% 50% 0 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+.repoBtn:hover::before,
+.liveBtn:hover::before {
+  height: 180%;
+}
+.repoBtn:hover,
+.liveBtn:hover {
+  text-shadow: 0px 0px 2px black;
+}
+.repoBtn > a,
+.liveBtn > a {
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem 1rem;
 }
 
 * {
   font-family: "Nunito", sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+
+.container {
+  flex: 1 0 auto;
+  padding: 0 2rem;
+}
+@media screen and (min-width: 1600px) {
+  .container {
+    max-width: 1600px;
+  }
+}
+
+.footer {
+  flex-shrink: 0;
+  overflow: hidden;
+  align-self: center;
+  padding: 1.2rem;
+  font-weight: 600;
+  color: black;
+  font-size: 1.4rem;
 }
 
 /*# sourceMappingURL=homepage.css.map */
