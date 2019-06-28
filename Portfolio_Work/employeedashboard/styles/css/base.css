@@ -1,0 +1,772 @@
+h4 {
+  font-size: 1.3rem;
+  padding-left: 2rem;
+  font-weight: 500;
+  color: grey;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px dimgrey;
+}
+
+.socialStats {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+h3 + .numbers {
+  font-size: 2.5rem;
+  color: dimgrey;
+}
+
+.twitter,
+.facebook,
+.google {
+  color: #555A91;
+  letter-spacing: 0.1rem;
+  border: 2px solid lightgrey;
+  display: flex;
+  border-radius: 0.5rem;
+  background-color: snow;
+  max-height: 8rem;
+}
+@media screen and (min-width: 1024px) {
+  .twitter,
+.facebook,
+.google {
+    flex: 1;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .facebook {
+    margin: 0 1rem;
+  }
+}
+
+.socialCard {
+  align-self: center;
+  padding: 1.5rem;
+}
+
+.twitterIcon,
+.facebookIcon,
+.googleIcon {
+  width: 6rem;
+  padding-left: 1rem;
+}
+
+.main {
+  font-family: "Roboto Slab";
+}
+
+h1 {
+  color: #534E72;
+  margin: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-decoration: underline;
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    padding: 2rem 2rem;
+    text-decoration: none;
+    background-color: floralwhite;
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h1 {
+    text-decoration: none;
+    background-color: floralwhite;
+    border-bottom: 2px solid #bebbd1;
+  }
+}
+
+.input {
+  display: flex;
+  border: 2px solid #534E72;
+  border-left: 0;
+  border-right: 0;
+  margin: 0.5rem 0;
+}
+
+.searchButton {
+  padding: 0.4rem;
+  background-color: whitesmoke;
+  border: none;
+  color: #534E72;
+}
+.searchButton:focus {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.search {
+  flex-grow: 2;
+  border: none;
+  background-color: whitesmoke;
+  padding: 0 1rem;
+}
+.search:focus {
+  outline: none;
+}
+.search::placeholder {
+  color: black;
+  font-size: 1.2rem;
+}
+
+.mainHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1rem;
+  background-color: whitesmoke;
+}
+@media screen and (min-width: 768px) {
+  .mainHeader {
+    flex-direction: row;
+  }
+}
+
+.alertBox {
+  display: flex;
+  font-size: 1.2rem;
+  color: snow;
+  justify-content: space-between;
+  background-color: #6f74aa;
+  margin: 2rem;
+  border-radius: 0.8rem;
+  line-height: 2.5rem;
+  padding-left: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .alertBox {
+    line-height: 4rem;
+  }
+}
+
+.alert {
+  font-size: 1.3rem;
+  color: white;
+  background-color: crimson;
+  border-radius: 5px;
+}
+@media screen and (min-width: 768px) {
+  .alert {
+    margin-left: 2rem;
+    padding: 0.3rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+  }
+}
+
+.message {
+  color: white;
+}
+
+#exit {
+  font-size: 1.6rem;
+  cursor: pointer;
+  align-self: center;
+  margin-right: 0.3rem;
+}
+
+.chartArea {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.upperChart {
+  width: 100%;
+  max-height: 40%;
+}
+
+@media screen and (min-width: 1024px) {
+  .lowerChart1,
+.lowerChart2 {
+    height: 30%;
+    flex: 1;
+  }
+}
+
+.lowerChart1,
+.lowerChart2 {
+  width: 100%;
+}
+
+.lowerChart1 {
+  border-top: 2px solid lightgrey;
+  border-right: 2px solid lightgrey;
+}
+
+.lowerChart2 {
+  border-top: 2px solid lightgrey;
+}
+
+.formCard {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0.5rem;
+}
+
+.newMembers,
+.recentActivity,
+.messageUser {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-top: solid lightgrey;
+}
+@media screen and (min-width: 768px) {
+  .newMembers,
+.recentActivity,
+.messageUser {
+    width: 50%;
+  }
+}
+
+.settings {
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .messageUser {
+    border-top: 1.5px solid lightgrey;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .messageUser:last-of-type {
+    border-left: 1.5px solid lightgrey;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .recentActivity {
+    border-left: 1.5px solid lightgrey;
+  }
+}
+
+.email {
+  font-size: 1.2rem;
+  color: #555A91;
+  padding-top: 0.2rem;
+}
+
+.membercard {
+  display: flex;
+  color: grey;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.date {
+  margin-left: auto;
+  align-self: center;
+  font-size: 1.2rem;
+  color: dimgrey;
+  padding-right: 1rem;
+}
+
+hr {
+  color: lightgrey;
+  radius: 50%;
+}
+
+.userImage {
+  max-width: 4rem;
+  max-height: 4rem;
+  margin-right: 1rem;
+  border-radius: 2rem;
+  border: solid 2px #CCC;
+  box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.9);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.messageheading {
+  margin-bottom: 1rem;
+  letter-spacing: 0.2rem;
+}
+
+.forminput {
+  margin-bottom: 1rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  border: solid lightgrey;
+}
+.forminput:focus {
+  border: solid #6f74aa;
+}
+.forminput::placeholder {
+  font-size: 1.1rem;
+}
+
+.send {
+  padding: 0.4rem;
+  background-color: #555A91;
+  color: white;
+  border-radius: 0.6rem;
+  flex: 1;
+  border-style: solid;
+  font-size: 1.2rem;
+  line-height: 4rem;
+}
+.send:hover {
+  color: #555A91;
+  background-color: white;
+  cursor: pointer;
+  border-color: #555A91;
+}
+
+textarea {
+  resize: vertical;
+  height: 12.9rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  border: solid lightgrey;
+}
+textarea:focus {
+  border: solid #6f74aa;
+}
+textarea::placeholder {
+  font-size: 1.2rem;
+}
+
+.timezoneButtons {
+  display: flex;
+}
+
+.send1 {
+  flex: 2;
+  padding: 0.4rem;
+  background-color: #555A91;
+  color: white;
+  border-radius: 0.5rem;
+  flex: 1;
+  border-style: solid;
+  font-size: 1.2rem;
+  line-height: 4rem;
+}
+.send1:hover {
+  color: #555A91;
+  background-color: white;
+  cursor: pointer;
+  border-color: #555A91;
+}
+
+.send1:nth-of-type(2) {
+  background-color: darkgrey;
+}
+
+#select {
+  width: 100%;
+  font-size: 1.1rem;
+  border: solid lightgrey;
+  border-radius: 0.5rem;
+  background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right white;
+  -webkit-appearance: none;
+  background-position-x: 97%;
+}
+#select:focus {
+  border: solid #6f74aa;
+}
+
+.notification {
+  font-size: 1.6rem;
+  width: 100%;
+  align-self: center;
+  color: grey;
+}
+@media screen and (min-width: 768px) {
+  .notification {
+    width: 40%;
+  }
+}
+
+.switch {
+  margin-right: auto;
+}
+
+.toggle1 {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.switch {
+  position: relative;
+  display: block;
+  width: 7.2rem;
+  height: 3.3rem;
+}
+@media screen and (min-width: 768px) {
+  .switch {
+    width: 6.5rem;
+    height: 3.9rem;
+  }
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: -1px;
+  bottom: 0;
+  right: 0;
+  background: lightgrey;
+  transition: 0.4s;
+  border: 3px solid #555A91;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 0px;
+  background-color: #555A91;
+  transition: 0.5s;
+}
+
+.switch .checkbox {
+  display: none;
+}
+
+.checkbox:checked + .slider {
+  background-color: #555A91;
+  border: 3px solid lightgrey;
+}
+
+.slider.round {
+  border-radius: 35px;
+}
+
+.slider.round:before {
+  width: 43%;
+  height: 43%;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  transform: rotateZ(-45deg);
+}
+
+.slider::before {
+  font-family: "Roboto Slab";
+  content: "OFF";
+  color: #9fa2c7;
+  font-size: 0.9rem;
+  padding-left: 0.4rem;
+  padding-top: 0.1rem;
+}
+@media screen and (min-width: 768px) {
+  .slider::before {
+    padding-left: 0.3rem;
+    padding-top: 0.3rem;
+  }
+}
+
+.checkbox:checked + .slider::before {
+  content: "ON";
+  color: #555A91;
+  font-family: "Roboto Slab";
+  padding-left: 0.6rem;
+  padding-top: 0.1rem;
+  font-size: 1rem;
+  transform: translateX(34px) rotateZ(45deg);
+  background-color: lightgrey;
+}
+@media screen and (min-width: 768px) {
+  .checkbox:checked + .slider::before {
+    padding-left: 0.6rem;
+    padding-top: 0.4rem;
+  }
+}
+
+@keyframes slideup {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.slideMe {
+  animation: slideup 1s ease;
+}
+
+.messageFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.successMessage {
+  color: limegreen;
+  display: none;
+}
+
+.requireMessage {
+  color: red;
+  opacity: 0;
+}
+
+.visable {
+  display: block;
+}
+
+body {
+  background-color: lightslategrey;
+}
+
+.container {
+  display: grid;
+  grid-gap: 0.3rem 0;
+  grid-template-columns: 1.3fr 3.5fr 3.5fr 3.5fr;
+  grid-template-rows: 50px minmax(50px, max-content);
+}
+
+.main {
+  grid-column: 1/-1;
+  grid-row: 3/-1;
+  background: snow;
+}
+@media screen and (min-width: 768px) {
+  .main {
+    grid-column: 1/-1;
+    grid-row-start: 3;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main {
+    grid-row-start: 2;
+    grid-column: 2/-1;
+  }
+}
+
+.header {
+  grid-column: 1/-1;
+  color: white;
+  background-color: #6f74aa;
+}
+
+nav {
+  height: 100%;
+}
+
+ol {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1.5rem;
+}
+
+li {
+  list-style: none;
+}
+
+.name {
+  font-family: "Roboto Slab", serif;
+  font-weight: 9;
+  letter-spacing: 0.1rem;
+}
+
+.avitar {
+  max-width: 4rem;
+  max-height: 4rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+  margin-left: auto;
+  border: solid 2px #CCC;
+  box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.9);
+}
+
+.headerFlex {
+  display: flex;
+  margin-left: auto;
+}
+
+.bell {
+  margin-right: 1rem;
+  width: 2rem;
+  height: 3rem;
+  align-self: center;
+  padding-top: 0.8rem;
+  position: relative;
+  transition: transform 0.3s;
+}
+.bell:hover {
+  transform: rotateZ(30deg);
+}
+
+.horizontal {
+  margin-top: 1rem;
+  height: 3rem;
+  margin-right: 1.5rem;
+  border-left: 2px dotted #534E72;
+}
+
+@keyframes underline {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.cls-2 {
+  stroke-dasharray: 100px;
+  stroke-dashoffset: 100px;
+  animation: underline 2s forwards;
+  animation-timing-function: cubic-bezier(0.82, -0.03, 0.85, 3.6);
+}
+
+.myDashSVG {
+  width: 8rem;
+  stroke: white;
+  fill: white;
+  margin-right: 1.4rem;
+}
+.myDashSVG:hover {
+  stroke-width: 0px;
+}
+
+.cls-1 {
+  stroke: white;
+  stroke-miterlimit: 10;
+  stroke-width: 0.1px;
+}
+
+g {
+  stroke: none;
+}
+
+.name {
+  font-size: 1.3rem;
+  padding: 0.6rem 0;
+  padding-left: 1rem;
+}
+
+.sidebar {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  background-color: #534E72;
+}
+@media screen and (min-width: 768px) {
+  .sidebar {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .sidebar {
+    grid-column: 1/2;
+    grid-row: 2/-1;
+  }
+}
+
+.icon {
+  margin: 0.2rem 0;
+}
+@media screen and (min-width: 768px) {
+  .icon {
+    padding: 0.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .icon {
+    padding: 2rem;
+  }
+}
+@media (max-height: 360px) {
+  .icon {
+    padding: 0.3rem;
+  }
+}
+
+.icon:nth-of-type(1) {
+  padding-top: 1rem;
+}
+
+.icons {
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .icons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .icons {
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+  }
+}
+
+.dashboard,
+.visits,
+.setting,
+.members {
+  width: 2.5rem;
+}
+.dashboard:hover,
+.visits:hover,
+.setting:hover,
+.members:hover {
+  width: 3rem;
+}
+
+.greenDot {
+  position: absolute;
+  max-width: 10px;
+  top: 5px;
+  left: 10px;
+}
+
+.greenDotAnchor {
+  position: relative;
+  text-decoration: none;
+}
+
+.alertNotifications {
+  background-color: white;
+  position: absolute;
+  width: 22.3rem;
+  font-size: 1.2rem;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .alertNotifications {
+    width: 15rem;
+  }
+}
+
+.navbarNotification {
+  max-width: 10px;
+  max-height: 10px;
+  margin: 1rem;
+}
+
+.alertflexbox,
+.listflex {
+  display: flex;
+  padding-top: 0.3rem;
+}
+
+.alertCircle {
+  margin: 0.5rem;
+  margin-left: auto;
+}
+
+/*# sourceMappingURL=base.css.map */

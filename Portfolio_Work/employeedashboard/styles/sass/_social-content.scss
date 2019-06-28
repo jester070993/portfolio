@@ -1,0 +1,67 @@
+
+//social stats header
+h4{
+	font-size: 1.3rem;
+	padding-left: 2rem;
+	font-weight: 500;
+	color: grey;
+	text-transform: uppercase;
+  text-shadow: 1px 1px  1px dimgrey;
+
+}
+
+//social stats navigation
+.socialStats{
+	display: flex;
+	justify-content: space-between;
+	padding: 1.5rem 2rem;
+}
+
+//social stat block titles and numbers
+h3{
+	font-size: 1.3rem;
+	& + .numbers {
+		font-size: 2.5rem;
+		color: dimgrey;
+	}
+} 
+
+//display each card across the page evenly
+.twitter,
+.facebook,
+.google{
+	color: $icons;
+	letter-spacing: .1rem;
+	border: 2px solid lightgrey;
+	display: flex;
+	border-radius: .5rem;
+	background-color: snow;
+	max-height: 8rem;
+	@include desktop {
+		flex: 1;
+		justify-content: center;
+	
+	}
+	}
+
+.facebook{
+	@include desktop {
+		margin: 0 1rem;
+	}
+}
+
+//aligns social name a number in vertical center of each card
+.socialCard{
+	align-self: center;
+	padding: 1.5rem;
+}
+
+.twitterIcon,
+.facebookIcon,
+.googleIcon{
+	width: 6rem;
+	padding-left: 1rem;
+}
+
+
+ 

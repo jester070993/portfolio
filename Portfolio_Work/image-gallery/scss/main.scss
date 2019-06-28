@@ -1,0 +1,80 @@
+
+// .container{
+// 	color: yellow;
+// }
+// container  class in my reset
+
+@import "mediaquerymixins.scss";
+
+html{
+	font-family: 'BenchNine', sans-serif;
+}
+
+.inputNav {
+	display: flex;
+	justify-content: center;
+	margin: 1.6rem 0;
+	input{
+		background-color: transparent;
+		border: none;
+		border-bottom: .1rem dashed darkgrey;
+		line-height: 3rem;
+		width: 95%;
+		text-align: center;
+		font-size: 2rem;
+		color: dimgrey;
+		letter-spacing: .1rem;
+
+		&:focus{
+			outline: none;
+		}
+		&::placeholder {
+			letter-spacing: .5rem;
+			font-size: 2rem;
+			font-weight: 900;
+			color: grey;
+		}
+		@include desktop {
+			width: 40%;
+	}	
+	}
+}
+
+.flex{
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	@include desktop {
+		flex-wrap: wrap; 
+		flex-direction: row;
+	}
+}
+
+div{
+	text-align: center;
+	margin: 0;
+}
+
+img{
+	border: .1rem solid #ddd;
+	padding: .5rem;
+	border-radius: .4rem;
+	text-align: center;
+	&:hover{
+		box-shadow: 0 0 5px grey;
+		transition: box-shadow 500ms ;
+	}
+
+}
+
+.item{
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 25%;
+	margin: 1rem 1rem;
+}
+
+.container{
+	max-width: 1000px;
+}

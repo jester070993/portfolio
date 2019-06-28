@@ -148,70 +148,84 @@
 // })
 // })
 
-$(".navul").hide();
-$(".svgArrow").hide();
 
-
-
-const logo = document.querySelector(".logo")
-
-logo.addEventListener("click", () => {
-	$(".svgArrow").show();
-
-	$(".navul").slideToggle();
-
+//once  the document is loaded, checks if window width is below 768 px, 
+//if so, hide nav and arrows  and add a click listener to toggle the logo
+$(document).ready(function(){
+	if(window.innerWidth < 768){
+		$(".navul").hide();
+		$(".svgArrow").hide();
+		const logo = document.querySelector(".logo")
+		logo.addEventListener("click", () => {
+			$(".svgArrow").show();
+			$(".navul").slideToggle();
+		})
+	}
 })
 
+//variables for animated nav items on hover 
+//animates hover with anime.js library
+// const animeWrapper = document.querySelectorAll(".animeWrapper")
+// const iconWrapper = document.querySelectorAll(".iconWrapper")
+// animeWrapper.forEach((animeWrapper) => {
+// 	animeWrapper.addEventListener("mouseenter", (e) => {
+// 		console.log(this.value)
+// 		anime({
+// 			targets: animeWrapper.querySelector(".arrow"),
+// 			scale: 30,
+// 			easing: "easeInExpo",		
+// 			duration: 300
+// 		})
+// 	})
+// 	animeWrapper.addEventListener("mouseleave", (e) => {
+// 		anime({
+// 			targets: animeWrapper.querySelector(".arrow"),
+// 			scale: 1,
+// 			easing: "easeInOutExpo",
+// 			duration: 300
+// 		})
+// 	})
+// })
+// //icon animations hover
+// iconWrapper.forEach( wrapper => {
+// 	wrapper.addEventListener("mouseenter", () => {
+// 		anime({
+// 			targets: wrapper.querySelector("hr"),
+// 			scaleX: 20,
+// 			opacity: 1,
+// 			easing: "easeOutExpo",
+// 			duration: 350
+// 		})
+// 		wrapper.addEventListener("mouseleave", () => {
+// 			anime({
+// 				targets: wrapper.querySelector("hr"),
+// 				scaleX: 0,
+// 				opacity: 0,
+// 				easing: "easeOutExpo",
+// 				duration: 350
+// 			})
+// 		})
+// 	})
+// })
 
-const animeWrapper = document.querySelectorAll(".animeWrapper")
-const iconWrapper = document.querySelectorAll(".iconWrapper")
+//set "active" class on given page
+const titles = document.querySelectorAll(".text")
+titles.forEach(title => {
+	title.addEventListener("click", (e) =>{
+		console.log(this.value)
+		// if(title.classList.contains("active"){
 
+		// }
+		// title.classList.toggle("active")
 
+		// if (title.classList.contains("active")){
+		// 	title.classList.remove("active")
+		// }
+		// if(title.classList.toggle("active")){
 
-
-animeWrapper.forEach((animeWrapper) => {
-	animeWrapper.addEventListener("mouseenter", (e) => {
-		anime({
-			targets: animeWrapper.querySelector(".arrow"),
-			scale: 30,
-			easing: "easeInExpo",		
-			duration: 300
-
-		})
-	})
-	animeWrapper.addEventListener("mouseleave", (e) => {
-		anime({
-			targets: animeWrapper.querySelector(".arrow"),
-			scale: 1,
-			easing: "easeInOutExpo",
-			duration: 300
-		})
+		// }
 	})
 })
-
-
-iconWrapper.forEach( wrapper => {
-	wrapper.addEventListener("mouseenter", () => {
-		anime({
-			targets: wrapper.querySelector("hr"),
-			scaleX: 20,
-			opacity: 1,
-			easing: "easeOutExpo",
-			duration: 350
-		})
-		
-		wrapper.addEventListener("mouseleave", () => {
-			anime({
-				targets: wrapper.querySelector("hr"),
-				scaleX: 0,
-				opacity: 0,
-				easing: "easeOutExpo",
-				duration: 350
-			})
-		})
-	})
-})
-
 
 
 
