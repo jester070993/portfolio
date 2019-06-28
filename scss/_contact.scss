@@ -1,0 +1,10 @@
+.contactFlex{
+	display:  flex;
+	flex-wrap: wrap;
+	&>div{
+		width: 100%;
+		text-align: center;
+		padding: 3rem 0;
+		font-size: 3rem;
+	}
+}
