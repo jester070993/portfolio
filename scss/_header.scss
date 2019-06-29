@@ -1,6 +1,7 @@
 .nav{
 	// background-color: white;
-	  background-image: linear-gradient(#ff9d2f, #ff6126);
+	  // background-image: linear-gradient(#ff9d2f, #ff6126);
+	background-color: $grey1;
 
 	 padding-top: 2rem;
 	@include smlscreen{
@@ -10,6 +11,8 @@
 	} 
 	@include desktop{
 		padding: .3rem 5rem;
+		border-bottom-right-radius: 50%;
+		justify-content: space-around;
 
 	}
 
@@ -21,6 +24,9 @@
   padding-top: 1rem;
   &:hover{
   	  animation: shake .5s ease ;
+  }
+  &:nth-of-type(1){
+  	padding-right: 1rem;
   }
 
 }  
@@ -57,7 +63,7 @@
 		width: 75%;
 	}
 	@include desktop{
-		width: 50%;
+		// width: 50%;
 	}
 }
 
@@ -80,13 +86,27 @@
 
 .logo{
 	padding: .8rem 0;
+	 &::after{
+	    	content: "Menu";
+	    	padding-left: 2rem;
+	    	padding-top: 2rem;
+	    	font-family: 'Nunito', sans-serif;
+	    	font-weight: 900;
+
+
+	 }
 	@include smlscreen{
 	 	padding: 0;
-	    flex: 1;
+	 	margin-left: auto;
+	    flex: 0;
 	    align-self: flex-end;
 	    text-align: left;
 	    display: flex;
 	    justify-content: flex-start;
+	    &::after{
+	    	content: ""; 
+	    }
+
 	}
 }
 
@@ -110,6 +130,8 @@ li:nth-of-type(1){
 		@include smlscreen{
 			border: none;
 			height: 100%;
+
+
 		}
 	}
 .svg{
@@ -129,6 +151,9 @@ li{
 	
 }
 
+.socialUL{
+	margin-right: auto;
+}
 
 
 
@@ -143,10 +168,10 @@ li{
 }
 
 
-.jLetter:hover{
-	fill: transparent;
-	stroke: "black" ;
-}
+// .jLetter:hover{
+// 	fill: transparent;
+// 	stroke: "black" ;
+// }
 
 
 // .svgArrow{
@@ -185,13 +210,33 @@ li{
     text-transform: uppercase;
 	color: black;
     font-size: 3rem;
+    	font-family: 'Bahianita', cursive;
+	
+
 	transition: all .5s ease;
 	&:hover{
 		color: white;
 		text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
 	}
+	@include smlscreen{
+		display: flex;
+		align-items: center;
+	 justify-content: center;
+	 letter-spacing: .2rem;
+		}
+	@include desktop{
+			display: flex;
+		 letter-spacing: .8rem;
+		 font-weight: 800;
+
+			align-items: center;
+		 justify-content: center;
+		}
 
 }
+
+
+
 
 
 

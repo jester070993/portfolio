@@ -1,12 +1,4 @@
-// /*base styles*/
-// // $nameColor: goldenrod;
-// // $primary-color: crimson;
-// // $inverted: invert($primary-color);
-// // $complement: complement($nameColor);
 
-// // $new-color: rgba($complement, .3);
-// // $saturate: saturate($new-color, 90%);
-// // $darken: darken($saturate, 50%);
 
 // // @mixin font-style{
 // //     text-transform: uppercase;
@@ -266,6 +258,25 @@
 
 
 
+// base styles and variables
+$nameColor: goldenrod;
+$primary-color: crimson;
+$inverted: invert($primary-color);
+$complement: complement($nameColor);
+$new-color: rgba($complement, .3);
+$saturate: saturate($new-color, 90%);
+$darken: darken($saturate, 50%);
+
+$orange1: #ef6817;
+// $orangeOpacity: rgb(239, 104, 23, .1);
+$black1: #21201f;
+$grey1: #727271 ;
+$grey2: #5f605d;
+$grey3: #383838;
+
+
+
+
 
 //partials
 @import "media-query-mixins";
@@ -286,8 +297,7 @@ body{
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
-	background: white;
-
+	background-color: $black1;
 }
 
 .container{
@@ -304,7 +314,7 @@ body{
 	align-self: center;
 	padding: 1.2rem ;
 	font-weight: 600;
-	color: black;
+	color: $grey1;
 	font-size: 1.4rem;
 	
 }

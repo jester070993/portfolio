@@ -1,5 +1,5 @@
 .nav {
-  background-image: linear-gradient(#ff9d2f, #ff6126);
+  background-color: #727271;
   padding-top: 2rem;
 }
 @media screen and (min-width: 768px) {
@@ -12,6 +12,8 @@
 @media screen and (min-width: 1200px) {
   .nav {
     padding: 0.3rem 5rem;
+    border-bottom-right-radius: 50%;
+    justify-content: space-around;
   }
 }
 
@@ -22,6 +24,9 @@
 }
 .fab:hover {
   animation: shake 0.5s ease;
+}
+.fab:nth-of-type(1) {
+  padding-right: 1rem;
 }
 
 @keyframes shake {
@@ -51,12 +56,6 @@
     width: 75%;
   }
 }
-@media screen and (min-width: 1200px) {
-  .navul {
-    width: 50%;
-  }
-}
-
 .social {
   list-style-type: none;
   display: flex;
@@ -75,14 +74,25 @@
 .logo {
   padding: 0.8rem 0;
 }
+.logo::after {
+  content: "Menu";
+  padding-left: 2rem;
+  padding-top: 2rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+}
 @media screen and (min-width: 768px) {
   .logo {
     padding: 0;
-    flex: 1;
+    margin-left: auto;
+    flex: 0;
     align-self: flex-end;
     text-align: left;
     display: flex;
     justify-content: flex-start;
+  }
+  .logo::after {
+    content: "";
   }
 }
 
@@ -128,6 +138,10 @@ li {
   height: 100%;
 }
 
+.socialUL {
+  margin-right: auto;
+}
+
 .pageLinks {
   display: block;
   width: 100%;
@@ -135,21 +149,34 @@ li {
   text-decoration: none;
 }
 
-.jLetter:hover {
-  fill: transparent;
-  stroke: "black";
-}
-
 .text {
   height: 100%;
   text-transform: uppercase;
   color: black;
   font-size: 3rem;
+  font-family: "Bahianita", cursive;
   transition: all 0.5s ease;
 }
 .text:hover {
   color: white;
   text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+}
+@media screen and (min-width: 768px) {
+  .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .text {
+    display: flex;
+    letter-spacing: 0.8rem;
+    font-weight: 800;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .iconFlex {
@@ -183,17 +210,31 @@ li {
 h1 {
   font-size: 4rem;
   margin: 2rem 10rem;
-  box-shadow: inset 0 0px 20px 0 rgba(59, 43, 91, 0.1);
   padding-left: 4rem;
-  padding-bottom: 2rem;
   padding-top: 2rem;
+  color: #727271;
 }
+@media screen and (min-width: 768px) {
+  h1 {
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
+#hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #ef6817, rgba(0, 0, 0, 0));
+}
+
 h3 {
-  padding: 1rem 3rem;
+  color: #727271;
+  padding: 2rem 2rem;
 }
 
 .subtitle {
   font-size: 2.3rem;
+  color: #727271;
 }
 @media screen and (min-width: 1200px) {
   .subtitle {
@@ -215,7 +256,7 @@ h3 {
 
 .projectText {
   text-align: center;
-  background: snow;
+  background-color: #5f605d;
   padding: 2.3rem 0.5rem;
   border-left: 2px solid black;
   border-right: 2px solid black;
@@ -243,10 +284,12 @@ h3 {
 
 .projectBtns {
   width: 400px;
-  background: snow;
+  background-color: #5f605d;
   text-align: center;
+  border-top: 1px solid #727271;
   border-radius: 0 0 50% 50%;
   padding-bottom: 2rem;
+  padding-top: 1rem;
   border-left: 2px solid black;
   border-right: 2px solid black;
   border-bottom: 2px solid black;
@@ -268,7 +311,7 @@ h3 {
 .liveBtn::before {
   content: "";
   position: absolute;
-  background-color: salmon;
+  background-color: #ef6817;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -283,17 +326,18 @@ h3 {
 }
 .repoBtn:hover,
 .liveBtn:hover {
-  text-shadow: 0px 0px 2px black;
+  text-shadow: 0px 0px 2px #21201f;
 }
 .repoBtn > a,
 .liveBtn > a {
   text-decoration: none;
-  color: black;
+  color: #21201f;
   padding: 0.5rem 1rem;
 }
 
 .about {
   font-size: 2rem;
+  color: #727271;
 }
 .about:first-letter {
   color: #903;
@@ -303,10 +347,13 @@ h3 {
   padding-top: 4px;
   padding-right: 8px;
   padding-left: 3px;
+  color: #ef6817;
+  font-family: Georgia;
 }
 .about ~ p {
   font-size: 2rem;
   text-indent: 3rem;
+  color: #727271;
 }
 
 @media screen and (min-width: 768px) {
@@ -326,12 +373,14 @@ h3 {
 .skills {
   text-align: center;
   padding-bottom: 0.3rem;
+  color: #ef6817;
 }
 .skills ~ div {
   text-align: center;
 }
 .skills ~ div > h4 {
   padding: 1rem 0;
+  color: #727271;
 }
 
 .skillimgs {
@@ -347,6 +396,12 @@ h3 {
   text-align: center;
   padding: 3rem 0;
   font-size: 3rem;
+  color: #727271;
+}
+
+.fas {
+  color: #ef6817;
+  padding-right: 1.5rem;
 }
 
 * {
@@ -361,7 +416,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background: white;
+  background-color: #21201f;
 }
 
 .container {
@@ -380,7 +435,7 @@ body {
   align-self: center;
   padding: 1.2rem;
   font-weight: 600;
-  color: black;
+  color: #727271;
   font-size: 1.4rem;
 }
 

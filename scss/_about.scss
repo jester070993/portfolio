@@ -1,5 +1,7 @@
 .about{
 	font-size: 2rem;
+		  color: $grey1;
+
 	&:first-letter{
 	  color: #903;
 	  float: left;
@@ -8,10 +10,15 @@
 	  padding-top: 4px;
 	  padding-right: 8px;
 	  padding-left: 3px;
+	  color: $orange1;
+	    font-family: Georgia;
+
 		}
 	&~p{
 	font-size: 2rem;
-	text-indent: 3rem;
+	text-indent: 3rem;	 
+	 color: $grey1;
+
 }
 
 }
@@ -32,10 +39,12 @@
 .skills{
 	text-align: center;
 	padding-bottom: .3rem;
+	color: $orange1;
 	&~div{
 		text-align: center;
 		&>h4{
 			padding: 1rem 0;
+			color: $grey1;
 		}
 
 	}

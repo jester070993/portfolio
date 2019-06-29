@@ -154,11 +154,11 @@
 $(document).ready(function(){
 	if(window.innerWidth < 768){
 		$(".navul").hide();
-		$(".svgArrow").hide();
+		$(".socialUL").hide();
 		const logo = document.querySelector(".logo")
 		logo.addEventListener("click", () => {
-			$(".svgArrow").show();
 			$(".navul").slideToggle();
+			$(".socialUL").slideToggle();
 		})
 	}
 })
