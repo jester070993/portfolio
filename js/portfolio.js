@@ -232,7 +232,6 @@ titles.forEach(title => {
 
 
 
-
 // })
 // logo.addEventListener("click", () => {
 // 	anime({

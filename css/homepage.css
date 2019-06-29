@@ -12,7 +12,8 @@
 @media screen and (min-width: 1200px) {
   .nav {
     padding: 0.3rem 5rem;
-    border-bottom-right-radius: 50%;
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 30%;
     justify-content: space-around;
   }
 }
@@ -186,7 +187,7 @@ li {
 }
 
 .active {
-  text-decoration: underline;
+  border-bottom: 1px solid #ef6817;
 }
 
 .svgHeader {
