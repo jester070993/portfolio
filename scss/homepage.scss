@@ -302,7 +302,7 @@ body{
 
 .container{
 	flex:  1 0 auto;
-	padding: 0 2rem;
+	padding: 0 .2rem;
 	@include desktop{
 		max-width: 1600px;
 	}

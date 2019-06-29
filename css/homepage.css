@@ -237,6 +237,12 @@ h3 {
   font-size: 2.3rem;
   color: #727271;
   font-family: "Comfortaa", cursive;
+  padding: 0 0;
+}
+@media screen and (min-width: 768px) {
+  .subtitle {
+    padding-left: 2rem;
+  }
 }
 @media screen and (min-width: 1200px) {
   .subtitle {
@@ -275,8 +281,13 @@ h3 {
   flex-direction: column;
   align-items: center;
   flex: 1;
-  margin: 1.6rem;
+  margin: 0.9rem;
   border-radius: 0 0 10% 10%;
+}
+@media screen and (min-width: 768px) {
+  .project {
+    margin: 1.6rem;
+  }
 }
 
 .title {
@@ -425,7 +436,7 @@ body {
 
 .container {
   flex: 1 0 auto;
-  padding: 0 2rem;
+  padding: 0 0.2rem;
 }
 @media screen and (min-width: 1200px) {
   .container {
