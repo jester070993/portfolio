@@ -56,9 +56,13 @@ h3{
 
 .projectImg,
 .projectText{
-	max-width: 400px;
+	max-width: 300px;
 	border-left: 2px solid black;
     border-right: 2px solid black;
+    @include smlscreen {
+    	max-width: 400px;
+    }
+
 }
 
 .projectText{
@@ -96,7 +100,7 @@ h3{
 }
 
 .projectBtns{
-	width: 400px;
+	width: 300px;
 	 background-color: $grey2;
     text-align: center;
     border-top: 1px solid $grey1;
@@ -108,7 +112,11 @@ h3{
     border-bottom: 2px solid black;
     
     box-shadow:  0 24px 25px 0 rgba(0, 0, 0, .19);
+    @include smlscreen {
+		width: 400px;
+    }
 }
+
 
 .repoBtn,
 .liveBtn {

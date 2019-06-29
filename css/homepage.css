@@ -257,9 +257,15 @@ h3 {
 
 .projectImg,
 .projectText {
-  max-width: 400px;
+  max-width: 300px;
   border-left: 2px solid black;
   border-right: 2px solid black;
+}
+@media screen and (min-width: 768px) {
+  .projectImg,
+.projectText {
+    max-width: 400px;
+  }
 }
 
 .projectText {
@@ -296,7 +302,7 @@ h3 {
 }
 
 .projectBtns {
-  width: 400px;
+  width: 300px;
   background-color: #5f605d;
   text-align: center;
   border-top: 1px solid #727271;
@@ -307,6 +313,11 @@ h3 {
   border-right: 2px solid black;
   border-bottom: 2px solid black;
   box-shadow: 0 24px 25px 0 rgba(0, 0, 0, 0.19);
+}
+@media screen and (min-width: 768px) {
+  .projectBtns {
+    width: 400px;
+  }
 }
 
 .repoBtn,
