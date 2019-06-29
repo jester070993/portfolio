@@ -235,6 +235,7 @@ h3 {
 .subtitle {
   font-size: 2.3rem;
   color: #727271;
+  font-family: "Comfortaa", cursive;
 }
 @media screen and (min-width: 1200px) {
   .subtitle {
@@ -338,6 +339,7 @@ h3 {
 .about {
   font-size: 2rem;
   color: #727271;
+  font-family: "Catamaran", sans-serif;
 }
 .about:first-letter {
   color: #903;
@@ -354,6 +356,7 @@ h3 {
   font-size: 2rem;
   text-indent: 3rem;
   color: #727271;
+  font-family: "Catamaran", sans-serif;
 }
 
 @media screen and (min-width: 768px) {
@@ -437,6 +440,10 @@ body {
   font-weight: 600;
   color: #727271;
   font-size: 1.4rem;
+}
+
+h1 {
+  font-family: "Righteous", cursive;
 }
 
 /*# sourceMappingURL=homepage.css.map */
