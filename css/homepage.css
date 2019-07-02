@@ -250,7 +250,7 @@ h3 {
 
 .projectImg,
 .projectText {
-  max-width: 400px;
+  max-width: 375px;
   border-left: 2px solid black;
   border-right: 2px solid black;
 }
@@ -284,7 +284,7 @@ h3 {
 }
 
 .projectBtns {
-  width: 400px;
+  width: 375px;
   background-color: #5f605d;
   text-align: center;
   border-top: 1px solid #727271;
@@ -307,6 +307,10 @@ h3 {
   position: relative;
   z-index: 9;
   transition: 0.5s;
+  text-decoration: none;
+  color: #21201f;
+  padding: 0.5rem 1rem;
+  display: inline;
 }
 .repoBtn::before,
 .liveBtn::before {
@@ -318,7 +322,7 @@ h3 {
   width: 100%;
   height: 0;
   border-radius: 50% 50% 0 0;
-  z-index: -1;
+  z-index: -9;
   transition: 0.5s;
 }
 .repoBtn:hover::before,
