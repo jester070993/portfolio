@@ -11,9 +11,9 @@
 	} 
 	@include desktop{
 		padding: .3rem 5rem;
-		border-bottom-right-radius: 50%;
+		border-bottom-right-radius: 30%;
+		border-bottom-left-radius: 30%;
 		justify-content: space-around;
-
 	}
 
 }
@@ -247,7 +247,8 @@ li{
 }
 
 .active{
-	text-decoration: underline;
+	  border-bottom: 1px solid $orange1;
+
 }
 
 
