@@ -209,18 +209,16 @@ li {
 }
 
 h1 {
-  padding-left: 1rem;
-  margin: 2rem 0;
+  font-size: 4rem;
+  margin: 2rem 10rem;
+  padding-left: 4rem;
+  padding-top: 2rem;
   color: #727271;
 }
 @media screen and (min-width: 768px) {
   h1 {
     text-align: center;
     padding-left: 0;
-    font-size: 4rem;
-    margin: 2rem 10rem;
-    padding-left: 4rem;
-    padding-top: 2rem;
   }
 }
 
@@ -239,13 +237,6 @@ h3 {
   font-size: 2.3rem;
   color: #727271;
   font-family: "Comfortaa", cursive;
-  padding: 0.2rem 0.2rem;
-  padding-top: 3rem;
-}
-@media screen and (min-width: 768px) {
-  .subtitle {
-    padding-left: 2rem;
-  }
 }
 @media screen and (min-width: 1200px) {
   .subtitle {
@@ -260,19 +251,9 @@ h3 {
 
 .projectImg,
 .projectText {
-<<<<<<< HEAD
   max-width: 375px;
-=======
-  max-width: 250px;
->>>>>>> a4ee777de177e982f757d4e85faf652e3225af9a
   border-left: 2px solid black;
   border-right: 2px solid black;
-}
-@media screen and (min-width: 768px) {
-  .projectImg,
-.projectText {
-    max-width: 400px;
-  }
 }
 
 .projectText {
@@ -294,13 +275,8 @@ h3 {
   flex-direction: column;
   align-items: center;
   flex: 1;
-  margin: 0.9rem;
+  margin: 1.6rem;
   border-radius: 0 0 10% 10%;
-}
-@media screen and (min-width: 768px) {
-  .project {
-    margin: 1.6rem;
-  }
 }
 
 .title {
@@ -309,11 +285,7 @@ h3 {
 }
 
 .projectBtns {
-<<<<<<< HEAD
   width: 375px;
-=======
-  width: 250px;
->>>>>>> a4ee777de177e982f757d4e85faf652e3225af9a
   background-color: #5f605d;
   text-align: center;
   border-top: 1px solid #727271;
@@ -324,11 +296,6 @@ h3 {
   border-right: 2px solid black;
   border-bottom: 2px solid black;
   box-shadow: 0 24px 25px 0 rgba(0, 0, 0, 0.19);
-}
-@media screen and (min-width: 768px) {
-  .projectBtns {
-    width: 400px;
-  }
 }
 
 .repoBtn,
@@ -341,10 +308,7 @@ h3 {
   position: relative;
   z-index: 9;
   transition: 0.5s;
-  text-decoration: none;
-  color: #21201f;
-  padding: 0.5rem 1rem;
-  display: inline;
+  margin: 0 6rem;
 }
 .repoBtn::before,
 .liveBtn::before {
@@ -356,7 +320,7 @@ h3 {
   width: 100%;
   height: 0;
   border-radius: 50% 50% 0 0;
-  z-index: -9;
+  z-index: -1;
   transition: 0.5s;
 }
 .repoBtn:hover::before,
