@@ -1,26 +1,27 @@
-.nav {
-  background-color: #727271;
-  padding-top: 2rem;
+header {
+  font-size: 1.5rem;
 }
-@media screen and (min-width: 768px) {
-  .nav {
-    display: flex;
-    padding: 0.3rem 1rem;
-    position: relative;
+
+.navbar {
+  padding: 0 1.5rem;
+}
+@media screen and (min-width: 575px) {
+  .navbar {
+    padding: 0;
   }
 }
-@media screen and (min-width: 1200px) {
-  .nav {
-    padding: 0.3rem 5rem;
-    border-bottom-right-radius: 30%;
-    border-bottom-left-radius: 30%;
-    justify-content: space-around;
-  }
+
+.navbar-nav {
+  font-family: "Comfortaa", cursive;
+}
+
+.navbar-brand {
+  padding: 0;
 }
 
 .fab {
   font-size: 3rem;
-  color: black;
+  color: #727271;
   padding-top: 1rem;
 }
 .fab:hover {
@@ -44,173 +45,29 @@
     transform: translate3d(4px, 0, 0);
   }
 }
-.navul {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  list-style-type: none;
-}
-@media screen and (min-width: 768px) {
-  .navul {
-    flex-direction: row;
-    width: 75%;
-  }
-}
-.social {
-  list-style-type: none;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-.socialli {
-  flex: 1;
-}
-
-.navItem, .logo {
-  display: flex;
-  justify-content: center;
-}
-
-.logo {
-  padding: 0.8rem 0;
-}
-.logo::after {
-  content: "Menu";
-  padding-left: 2rem;
-  padding-top: 2rem;
-  font-family: "Nunito", sans-serif;
-  font-weight: 900;
-}
-@media screen and (min-width: 768px) {
-  .logo {
-    padding: 0;
-    margin-left: auto;
-    flex: 0;
-    align-self: flex-end;
-    text-align: left;
-    display: flex;
-    justify-content: flex-start;
-  }
-  .logo::after {
-    content: "";
-  }
-}
-
-.navItem + li {
-  border-bottom: 2px solid black;
-}
-@media screen and (min-width: 768px) {
-  .navItem + li {
-    border: none;
-    height: 100%;
-  }
-}
-
-li:nth-of-type(1) {
-  border-bottom: 2px solid black;
-  border-top: 2px solid black;
-}
-@media screen and (min-width: 768px) {
-  li:nth-of-type(1) {
-    border: none;
-    height: 100%;
-  }
-}
-
 .svg {
-  width: 50px;
-  height: 60px;
-}
-@media screen and (min-width: 768px) {
-  .svg {
-    margin-left: 4rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .svg {
-    margin-left: 2rem;
-  }
+  width: 40px;
+  height: 50px;
+  margin: 0;
+  margin-top: 0.5rem;
 }
 
-li {
-  width: 100%;
-  padding: 0;
-  height: 100%;
+.jLetter:hover {
+  fill: transparent;
+  stroke: "white";
+  fill: white;
 }
 
-.socialUL {
-  margin-right: auto;
-}
-
-.pageLinks {
-  display: block;
-  width: 100%;
-  text-align: center;
-  text-decoration: none;
+.flexNav {
+  justify-content: space-between;
 }
 
 .text {
-  height: 100%;
-  text-transform: uppercase;
-  color: black;
-  font-size: 3rem;
-  font-family: "Bahianita", cursive;
-  transition: all 0.5s ease;
-}
-.text:hover {
-  color: white;
-  text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
-}
-@media screen and (min-width: 768px) {
-  .text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    letter-spacing: 0.2rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .text {
-    display: flex;
-    letter-spacing: 0.8rem;
-    font-weight: 800;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-.iconFlex {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.active {
-  border-bottom: 1px solid #ef6817;
-}
-
-.svgHeader {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .svgHeader {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    height: 10vh;
-    width: 100%;
-  }
-}
-
-#ghLink {
-  color: black;
-  font-weight: 300;
+  padding: 0 2rem;
 }
 
 h1 {
   font-size: 4rem;
-  margin: 2rem 10rem;
   padding-left: 4rem;
   padding-top: 2rem;
   color: #727271;
@@ -228,12 +85,8 @@ h1 {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #ef6817, rgba(0, 0, 0, 0));
 }
 
-h3 {
-  color: #727271;
-  padding: 2rem 2rem;
-}
-
 .subtitle {
+  padding-bottom: 1rem;
   font-size: 2.3rem;
   color: #727271;
   font-family: "Comfortaa", cursive;
@@ -241,61 +94,48 @@ h3 {
 @media screen and (min-width: 1200px) {
   .subtitle {
     max-width: 75%;
-    padding-left: 6rem;
   }
 }
 
 .projectImg {
-  border-top: 2px solid black;
+  margin: 0 auto;
 }
 
 .projectImg,
 .projectText {
   max-width: 375px;
-  border-left: 2px solid black;
-  border-right: 2px solid black;
+}
+
+.card {
+  max-width: 375px;
 }
 
 .projectText {
   text-align: center;
-  background-color: #5f605d;
-  padding: 2.3rem 0.5rem;
-  border-left: 2px solid black;
-  border-right: 2px solid black;
+  font-size: 1.3rem;
 }
 
 .projects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-around;
 }
 
-.project {
+.card {
+  margin-bottom: 2rem;
+}
+
+.card-body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 1;
-  margin: 1.6rem;
-  border-radius: 0 0 10% 10%;
-}
-
-.title {
-  text-decoration: underline;
-  padding: 2rem;
+  justify-content: space-between;
 }
 
 .projectBtns {
   width: 375px;
-  background-color: #5f605d;
   text-align: center;
-  border-top: 1px solid #727271;
-  border-radius: 0 0 50% 50%;
-  padding-bottom: 2rem;
-  padding-top: 1rem;
-  border-left: 2px solid black;
-  border-right: 2px solid black;
-  border-bottom: 2px solid black;
-  box-shadow: 0 24px 25px 0 rgba(0, 0, 0, 0.19);
+  font-size: 1.3rem;
 }
 
 .repoBtn,
@@ -392,6 +232,10 @@ h3 {
   width: 64px;
 }
 
+svg {
+  margin: 0.5rem;
+}
+
 .contactFlex {
   display: flex;
   flex-wrap: wrap;
@@ -409,10 +253,11 @@ h3 {
   padding-right: 1.5rem;
 }
 
-* {
-  font-family: "Nunito", sans-serif;
+.contactTitle {
+  font-size: 2.3rem;
+  color: #727271;
+  font-family: "Comfortaa", cursive;
 }
-
 html {
   height: 100%;
 }
@@ -422,16 +267,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #21201f;
-}
-
-.container {
-  flex: 1 0 auto;
-  padding: 0 0.2rem;
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1600px;
-  }
+  padding-top: 65px;
 }
 
 .footer {
@@ -442,10 +278,7 @@ body {
   font-weight: 600;
   color: #727271;
   font-size: 1.4rem;
-}
-
-h1 {
-  font-family: "Righteous", cursive;
+  margin-top: auto;
 }
 
 /*# sourceMappingURL=homepage.css.map */

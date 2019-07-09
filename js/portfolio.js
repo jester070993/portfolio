@@ -1,3 +1,28 @@
+
+const svg = document.querySelector(".jLetter");
+
+svg.addEventListener("mouseenter", ()=>{
+	console.log("you hovered over the svg")
+})
+
+
+svg.addEventListener("mouseleave", ()=>{
+	console.log("you left over the svg")
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // anime.timeline({ 
 // 		// loop: true,
 // 		// duration: 25000

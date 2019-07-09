@@ -1,26 +1,52 @@
-.nav{
-	// background-color: white;
-	  // background-image: linear-gradient(#ff9d2f, #ff6126);
-	background-color: $grey1;
+header{
+	font-size: 1.5rem;
+}
 
-	 padding-top: 2rem;
-	@include smlscreen{
-		display: flex;
-		padding: .3rem 1rem;
-		position: relative;
-	} 
-	@include desktop{
-		padding: .3rem 5rem;
-		border-bottom-right-radius: 30%;
-		border-bottom-left-radius: 30%;
-		justify-content: space-around;
+.navbar{
+	padding: 0 1.5rem;
+	
+	@include mobile{
+		padding: 0;
 	}
+}
 
+.navbar-nav{
+	font-family: 'Comfortaa', cursive;
+}
+
+
+
+
+// .nav{
+// 	// background-color: white;
+// 	  // background-image: linear-gradient(#ff9d2f, #ff6126);
+// 	background-color: $grey1;
+
+// 	 padding-top: 2rem;
+// 	@include smlscreen{
+// 		display: flex;
+// 		padding: .3rem 1rem;
+// 		position: relative;
+// 	} 
+// 	@include desktop{
+// 		padding: .3rem 5rem;
+// 		border-bottom-right-radius: 30%;
+// 		border-bottom-left-radius: 30%;
+// 		justify-content: space-around;
+// 	}
+
+// }
+
+
+
+
+.navbar-brand {
+	padding: 0;
 }
 
 .fab  {
   font-size: 3rem;
-  color: black;
+  color: $grey1;
   padding-top: 1rem;
   &:hover{
   	  animation: shake .5s ease ;
@@ -52,221 +78,233 @@
   }
 }
 
-.navul{
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
-	list-style-type: none;
-	@include smlscreen{
-		flex-direction: row;
-		width: 75%;
-	}
-	@include desktop{
-		// width: 50%;
-	}
-}
-
-.social{
-	list-style-type: none;
-	display: flex;
-	width: 100%;
-	justify-content: center;
-	&li{
-		flex: 1;
-	}
-
-}
-
-.navItem, .logo{
-	// margin: 3rem 0;
-	display: flex;
-    justify-content: center;
-}
-
-.logo{
-	padding: .8rem 0;
-	 &::after{
-	    	content: "Menu";
-	    	padding-left: 2rem;
-	    	padding-top: 2rem;
-	    	font-family: 'Nunito', sans-serif;
-	    	font-weight: 900;
-
-
-	 }
-	@include smlscreen{
-	 	padding: 0;
-	 	margin-left: auto;
-	    flex: 0;
-	    align-self: flex-end;
-	    text-align: left;
-	    display: flex;
-	    justify-content: flex-start;
-	    &::after{
-	    	content: ""; 
-	    }
-
-	}
-}
-
-
-
-
-.navItem {
-	&+li{
-		border-bottom: 2px solid black;
-		@include smlscreen{
-			border: none;
-			height: 100%;
-		}
-	}
-}
-
-
-li:nth-of-type(1){
-	border-bottom: 2px solid black;
-	border-top: 2px solid black;
-		@include smlscreen{
-			border: none;
-			height: 100%;
-
-
-		}
-	}
-.svg{
-    width: 50px;
-    height: 60px;
-    @include smlscreen{
-    	margin-left: 4rem;
-    }  @include desktop{
-    	margin-left: 2rem;
-    }
-}
-
-li{
-	width: 100%;
-	padding: 0;
-	height: 100%;
-	
-}
-
-.socialUL{
-	margin-right: auto;
-}
-
-
-
-
-
-.pageLinks{
-	display: block;
-	width: 100%;
-	text-align: center;
-    text-decoration: none;
-  
-}
-
-
-// .jLetter:hover{
-// 	fill: transparent;
-// 	stroke: "black" ;
-// }
-
-
-// .svgArrow{
-//     right: 0;
-//     margin-right: 1.8rem;
-//     z-index: 9;
-//     position: relative;
-//     left: 40px;
-// }
-
-// .arrow{
-// 	width: 3rem;
-//     height: 3rem;
-//     border-radius: 50%;
-//     right: 0;
-//     position: relative;
-//     background-color: white;
-// } 
-
-
-
-// .animeWrapper{
-// 	overflow: hidden;
-// }
-
-// #arrow4{
-// 	background-color: salmon;
-// }
-
-// .arrowFill{
-// 	fill: white;
-// }
-
-.text{
-    height: 100%;
-    text-transform: uppercase;
-	color: black;
-    font-size: 3rem;
-    	font-family: 'Bahianita', cursive;
-	
-
-	transition: all .5s ease;
-	&:hover{
-		color: white;
-		text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
-	}
-	@include smlscreen{
-		display: flex;
-		align-items: center;
-	 justify-content: center;
-	 letter-spacing: .2rem;
-		}
-	@include desktop{
-			display: flex;
-		 letter-spacing: .8rem;
-		 font-weight: 800;
-
-			align-items: center;
-		 justify-content: center;
-		}
-
-}
-
-
-
-
-
-
-.iconFlex{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.active{
-	  border-bottom: 1px solid $orange1;
-
-}
-
-
-// .header{
-// 	 // background-image: linear-gradient(#ff9d2f, #ff6126);
+// .navul{
+// 	display: flex;
+// 	justify-content: center;
+// 	flex-direction: column;
+// 	align-items: center;
+// 	list-style-type: none;
 // 	@include smlscreen{
-// 		position: relative;
+// 		flex-direction: row;
+// 		width: 75%;
+// 	}
+// 	@include desktop{
+// 		// width: 50%;
 // 	}
 // }
-.svgHeader{
-	display: none;
-	@include smlscreen{
-		display: block;
-		position: absolute;
-		bottom: 0;
 
-		height: 10vh;
-		width: 100%;
+// .social{
+// 	list-style-type: none;
+// 	display: flex;
+// 	width: 100%;
+// 	justify-content: center;
+// 	&li{
+// 		flex: 1;
+// 	}
 
-	}
+// }
+
+// .navItem, .logo{
+// 	// margin: 3rem 0;
+// 	display: flex;
+//     justify-content: center;
+// }
+
+// .logo{
+// 	padding: .8rem 0;
+// 	 &::after{
+// 	    	content: "Menu";
+// 	    	padding-left: 2rem;
+// 	    	padding-top: 2rem;
+// 	    	font-family: 'Nunito', sans-serif;
+// 	    	font-weight: 900;
+
+
+// 	 }
+// 	@include smlscreen{
+// 	 	padding: 0;
+// 	 	margin-left: auto;
+// 	    flex: 0;
+// 	    align-self: flex-end;
+// 	    text-align: left;
+// 	    display: flex;
+// 	    justify-content: flex-start;
+// 	    &::after{
+// 	    	content: ""; 
+// 	    }
+
+// 	}
+// }
+
+
+
+
+// .navItem {
+// 	&+li{
+// 		border-bottom: 2px solid black;
+// 		@include smlscreen{
+// 			border: none;
+// 			height: 100%;
+// 		}
+// 	}
+// }
+
+
+// li:nth-of-type(1){
+// 	border-bottom: 2px solid black;
+// 	border-top: 2px solid black;
+// 		@include smlscreen{
+// 			border: none;
+// 			height: 100%;
+
+
+// 		}
+// 	}
+.svg{
+    width: 40px;
+    height: 50px;
+    margin: 0;
+    margin-top: .5rem;
+    // @include smlscreen{
+    // 	margin-left: 4rem;
+    // }  @include desktop{
+    // 	margin-left: 2rem;
+    // }
+}
+
+// li{
+// 	width: 100%;
+// 	padding: 0;
+// 	height: 100%;
+	
+// }
+
+// .socialUL{
+// 	margin-right: auto;
+// }
+
+
+
+
+
+// .pageLinks{
+// 	display: block;
+// 	width: 100%;
+// 	text-align: center;
+//     text-decoration: none;
+  
+// }
+
+
+.jLetter:hover{
+	fill: transparent;
+	stroke: "white" ;
+	fill: white;
+}
+
+
+// // .svgArrow{
+// //     right: 0;
+// //     margin-right: 1.8rem;
+// //     z-index: 9;
+// //     position: relative;
+// //     left: 40px;
+// // }
+
+// // .arrow{
+// // 	width: 3rem;
+// //     height: 3rem;
+// //     border-radius: 50%;
+// //     right: 0;
+// //     position: relative;
+// //     background-color: white;
+// // } 
+
+
+
+// // .animeWrapper{
+// // 	overflow: hidden;
+// // }
+
+// // #arrow4{
+// // 	background-color: salmon;
+// // }
+
+// // .arrowFill{
+// // 	fill: white;
+// // }
+
+// .text{
+//     height: 100%;
+//     text-transform: uppercase;
+// 	color: black;
+//     font-size: 3rem;
+//     	font-family: 'Bahianita', cursive;
+	
+
+// 	transition: all .5s ease;
+// 	&:hover{
+// 		color: white;
+// 		text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+// 	}
+// 	@include smlscreen{
+// 		display: flex;
+// 		align-items: center;
+// 	 justify-content: center;
+// 	 letter-spacing: .2rem;
+// 		}
+// 	@include desktop{
+// 			display: flex;
+// 		 letter-spacing: .8rem;
+// 		 font-weight: 800;
+
+// 			align-items: center;
+// 		 justify-content: center;
+// 		}
+
+// }
+
+
+
+
+
+
+// .iconFlex{
+// 	display: flex;
+// 	flex-direction: column;
+// 	align-items: center;
+// }
+
+// .active{
+// 	  border-bottom: 1px solid $orange1;
+
+// }
+
+
+// // .header{
+// // 	 // background-image: linear-gradient(#ff9d2f, #ff6126);
+// // 	@include smlscreen{
+// // 		position: relative;
+// // 	}
+// // }
+// .svgHeader{
+// 	display: none;
+// 	@include smlscreen{
+// 		display: block;
+// 		position: absolute;
+// 		bottom: 0;
+
+// 		height: 10vh;
+// 		width: 100%;
+
+// 	}
+// }
+
+
+.flexNav{
+	justify-content: space-between;
+}
+
+.text{
+	padding: 0 2rem;
 }
