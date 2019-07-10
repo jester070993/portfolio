@@ -52,6 +52,10 @@ header {
   margin-top: 0.5rem;
 }
 
+.jLetter {
+  transition: all 500ms ease;
+}
+
 .jLetter:hover {
   fill: transparent;
   stroke: "white";

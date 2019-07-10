@@ -196,6 +196,11 @@ header{
 // }
 
 
+ .jLetter{
+	transition: all 500ms ease;
+}
+
+
 .jLetter:hover{
 	fill: transparent;
 	stroke: "white" ;
