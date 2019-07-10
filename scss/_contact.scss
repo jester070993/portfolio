@@ -1,15 +1,12 @@
 .contactFlex{
 	display:  flex;
 	flex-wrap: wrap;
-
 	&>div{
 		width: 100%;
 		text-align: center;
 		padding: 3rem 0;
 		font-size: 3rem;
 		color: $grey1;
-
-
 	}
 }
 
@@ -23,7 +20,5 @@
 	color: $grey1;
 	font-family: 'Comfortaa', cursive;
 	@include desktop{
-		// max-width: 75%;
-		// padding-left: 6rem;
 	}
 }
