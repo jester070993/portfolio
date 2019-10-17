@@ -1,57 +1,61 @@
-.about{
-	font-size: 2rem;
-	color: $grey1;
-	font-family: 'Catamaran', sans-serif;
-	&:first-letter{
-	  color: #903;
-	  float: left;
-	  font-size: 7.5rem;
-	  line-height: 60px;
-	  padding-top: 4px;
-	  padding-right: 8px;
-	  padding-left: 3px;
-	  color: $orange1;
-	  font-family: Georgia;
-	}
-	&~p{
-	font-size: 2rem;
-	text-indent: 3rem;	 
-	 color: $grey1;
-	 font-family: 'Catamaran', sans-serif;
-	}
+.callout{
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &>.aboutTitle{
+        align-self: flex-start;
+        font-style: italic;
+        font-family: 'Hepta Slab', serif;
+
+    }
+
+
+}
+.contactFlex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+    padding-bottom: 5px;
+    div{
+        padding: 2px;
+    }
 }
 
-.aboutFlex{
-	@include smlscreen{
-		display: flex;
-	}
+.blurb{
+    text-indent: 50px;
 }
 
-.flexItem1{
-	flex: 2 ;
-}
 
-.flexItem2{
-	flex: 1 ;
-}
+.skillsBox{
+    display: flex;
+    h4{
+        text-align: center;
+        text-decoration: underline;
+        font-family: 'Hepta Slab', serif;
 
-.skills{
-	text-align: center;
-	padding-bottom: .3rem;
-	color: $orange1;
-	&~div{
-		text-align: center;
-		&>h4{
-			padding: 1rem 0;
-			color: $grey1;
-		}
-	}
+    }
 }
 
 .skillimgs{
-	width: 64px;
+    width: 64px;
 }
 
 svg{
 	margin: .5rem;
+}
+
+.aboutMe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+
+
+}
+
+.designSkills{
+    text-align: center;
 }

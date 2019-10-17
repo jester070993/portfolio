@@ -1,0 +1,32 @@
+
+
+// .projectImage{
+//     max-width: 300px;
+//     margin: 0 auto;
+// }
+
+.projectImg{
+    width: 300px;
+    margin: 0 auto;
+}
+
+.projectContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    flex: 1 0 250px;
+    text-align: center;
+}
+
+.card-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h4{
+        margin: 0;
+        font-family: 'Hepta Slab', serif;
+
+    }
+}
