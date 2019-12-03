@@ -1,0 +1,15 @@
+//mixin media queries 
+
+$desktop: 655px;
+
+
+@mixin tablet {
+	@media (min-width: $desktop){
+		@content
+	}
+};
+@mixin desktop {
+	@media (min-width: 920px){
+		@content
+	}
+};

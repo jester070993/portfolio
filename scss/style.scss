@@ -1,0 +1,281 @@
+@import "animation";
+@import "mediaQueries";
+
+
+$hero-full-screen-bg: url("https://images.unsplash.com/photo-1490598000245-075175152d25?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9") no-repeat center center fixed;
+$hero-full-screen-bg-size: cover;
+$hero-full-screen-text-color: white;
+
+@font-face {
+  font-family: 'ace_sans';
+  src:  url('../acesans-demo.woff');
+}
+
+
+*, h5{
+  font-family: "ace_sans", sans-serif
+}
+
+
+
+
+
+.hero-full-screen {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: $hero-full-screen-bg;
+  background-size: $hero-full-screen-bg-size;
+
+  .middle-content-section {
+    text-align: center;
+    color: $hero-full-screen-text-color;
+    h1{
+      font-size: 2.3rem;
+      @include tablet {
+        font-size: 3.5rem;
+      }
+      @include desktop{
+        font-size: 5rem;
+      }
+    }
+  }
+
+  .top-content-section {
+    width: 100%;
+  }
+
+  .bottom-content-section {
+    padding: 1rem;
+    padding-top: 0;
+
+    svg {
+      height: rem-calc(60);
+      width: rem-calc(60);
+      fill: black;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  // optional demo styles
+  .top-bar {
+    background: transparent;
+    padding-top: 2px;
+
+    .menu {
+      background: transparent;
+    }
+
+    .menu-text {
+      color: $hero-full-screen-text-color;
+      padding-left: 0px;
+      position: fixed;
+      backface-visibility: hidden;
+    }
+
+    .menu li {
+      display: flex;
+      align-items: center;
+    }
+
+    .menu a {
+      color: $hero-full-screen-text-color;
+      font-weight: bold;
+    }
+  }
+}
+
+//top logo styling svg
+.top-content-section{
+    height:10px;
+}
+
+.hero-full-screen { 
+    animation: fullPage 1s;
+}
+
+#location{
+  font-family: 'ace_sans';
+  font-size: 25px;
+  font-weight: 700;
+}
+
+
+//email svg
+svg{
+   max-width: 1000px;
+}
+
+//main area styling 
+html{
+  font-family: 'BenchNine', sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  height: 100%;
+}
+
+.flex{
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+  justify-content: center;
+  align-items: center;
+	@include desktop {
+		flex-wrap: wrap; 
+		flex-direction: row;
+	}
+}
+
+.contact{
+    text-align: center;
+}
+
+//porject content
+.item{
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 25%;
+	border-radius: .4rem;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+	&:hover{
+		box-shadow: 0 0 5px grey;
+		transition: box-shadow 500ms ;
+	}
+}
+
+.container{
+	max-width: 1000px;
+}
+
+//bottom contact styling footer
+.icons{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    li{
+        padding: 0 10px;
+        font-size: 3rem;
+        span{
+            color: darken(#c0362c, 10%) ;
+            transition:  transform .4s ease;
+            &:hover{
+              transform: scale(1.3) rotate(10deg);
+            }
+}
+}
+}
+
+.bottom-content-section{
+    width: 100%;
+}
+
+//card and wrapper
+.card {
+  border-radius: 10px;
+  width: 300px;
+  height: 143px;
+  perspective: 500px;
+  margin: 10px;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+
+//front style
+.front{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: white;
+  line-height: 300px;
+  color: #03446A;
+  text-align: center;
+  font-size: 60px;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+
+
+//back of card styles
+.back {
+  position: absolute;
+  top: 0;
+  
+  height: 100%;
+  width: 100%;
+  background: WHITE;
+  color: #03446A;
+  border-radius: 5px;
+  backface-visibility: hidden;
+  background-color: lightslategrey;
+background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
+  color: white;
+  transform: rotateY( 180deg );
+}
+
+.projectDetails{
+  list-style: none;
+  margin: 0;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.buttonColor{
+  color: white;
+}
+
+.project{
+  display: flex;
+  justify-content: center;
+}
+
+h1{
+  font-size: 2.5rem;
+  color: #501b1d;
+  font-weight: bold;
+  font-family: 'Montserrat Subrayada', sans-serif;
+  text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
+
+  @include tablet {
+    font-size: 4rem;
+	}
+  @include desktop{
+    font-size: 5.5rem;
+  }
+}
+
+.button.hollow.secondary{
+  color: white;
+  border-color: white;
+  border-radius: 7px;
+  &:hover, &:focus{
+    color:black;
+
+  }
+}
