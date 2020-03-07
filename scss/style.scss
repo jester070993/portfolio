@@ -68,12 +68,26 @@ $hero-full-screen-text-color: white;
       background: transparent;
     }
 
+    //logo in top left
     .menu-text {
+      max-width: 73px;
       color: $hero-full-screen-text-color;
       padding-left: 0px;
       position: fixed;
       backface-visibility: hidden;
+      @include tablet{
+         max-width: 85px;
+      }
+      @include desktop{
+        // width: 10%;
+      }
     }
+
+    .fixed{
+      fill: saturate($color: salmon, $amount: 10%);
+    }
+
+ 
 
     .menu li {
       display: flex;
@@ -246,19 +260,23 @@ body{
   width: 100%;
   height: 100%;
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
-
+  
   transition: transform 1s;
   transform-style: preserve-3d;
 }
 
 .card:hover .content {
-  transform: rotateY( 180deg ) ;
-  transition: transform 0.5s;
+  @include desktopFlip{
+     transform: rotateY( 180deg ) ;
+    transition: transform 0.5s;
+  } 
 }
 
 //front style
 .front{
-  position: relative;
+
+  @include desktopFlip{
+     position: relative;
   height: 100%;
   width: 100%;
   background: white;
@@ -268,25 +286,45 @@ body{
   font-size: 60px;
   border-radius: 5px;
   backface-visibility: hidden;
+  }
+ 
 }
 
+.noFlip{
+  display: flex;
+  flex-direction: column;
+  @include desktopFlip{
+    display: block;
+  }
+}
+
+.noFlipButtons{
+  @include desktopFlip{
+    display: none;
+  }
+}
 
 
 //back of card styles
 .back {
-  position: absolute;
-  top: 0;
-  
-  height: 100%;
-  width: 100%;
-  background: WHITE;
-  color: #03446A;
-  border-radius: 5px;
-  backface-visibility: hidden;
-  background-color: lightslategrey;
-background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
-  color: white;
-  transform: rotateY( 180deg );
+  display: none;
+  @include desktopFlip{ 
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: WHITE;
+    color: #03446A;
+    border-radius: 5px;
+    backface-visibility: hidden;
+    background-color: lightslategrey;
+    background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
+    color: white;
+    transform: rotateY( 180deg );
+  }
+
+ 
 }
 
 .projectDetails{
@@ -295,13 +333,27 @@ background-image: url("https://www.transparenttextures.com/patterns/60-lines.png
 }
 
 .buttons{
-  display: flex;
-  flex-direction: column;
+   display: flex;
+  flex-direction: row;
   list-style: none;
+  justify-content: center;
+  @include desktopFlip{
+    flex-direction: column;
+  }
+}
+
+ul{
+  margin: 0;
+  @include desktopFlip{
+    margin-left: 1.25rem;
+  }
 }
 
 .buttonColor{
-  color: white;
+  // color: black;
+  // @include desktopFlip{
+  //     color: white;
+  // }
 }
 
 .project{
@@ -325,11 +377,20 @@ h1{
 }
 
 .button.hollow.secondary{
-  color: white;
-  border-color: white;
   border-radius: 7px;
-  &:hover, &:focus{
-    color:black;
+  color: black;
+  border-color: black;
+  @include desktopFlip{
+    color: white;
+    border-color: white;
+  }
+    &:hover, &:focus{
+      color: salmon;
+      border-color: salmon;
+      @include desktopFlip{
+            color:black;
+            border-color: black;
+      }
 
   }
 }

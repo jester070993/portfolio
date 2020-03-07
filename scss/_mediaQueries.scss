@@ -13,3 +13,10 @@ $desktop: 755px;
 		@content
 	}
 };
+
+@mixin desktopFlip {
+	@media (min-width: 977px) {
+		@content
+	}
+	
+}
