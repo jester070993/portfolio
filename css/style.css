@@ -32,7 +32,7 @@
 .hero-full-screen .middle-content-section h1 {
   font-size: 2.3rem;
 }
-@media (min-width: 655px) {
+@media (min-width: 755px) {
   .hero-full-screen .middle-content-section h1 {
     font-size: 3.5rem;
   }
@@ -97,7 +97,12 @@
 }
 
 #top-svg {
-  max-width: 400px;
+  max-width: 310px;
+}
+@media (min-width: 755px) {
+  #top-svg {
+    max-width: 600px;
+  }
 }
 
 html {
@@ -274,7 +279,7 @@ h1 {
   font-family: "Montserrat Subrayada", sans-serif;
   text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0, 0, 0, 0.15);
 }
-@media (min-width: 655px) {
+@media (min-width: 755px) {
   h1 {
     font-size: 4rem;
   }

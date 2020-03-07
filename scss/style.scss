@@ -110,7 +110,10 @@ $hero-full-screen-text-color: white;
 
 //top svg
 #top-svg{
-  max-width: 400px;
+  max-width: 310px;
+  @include tablet{
+    max-width: 600px;
+  }
  
 }
 
