@@ -19,7 +19,6 @@ $hero-full-screen-text-color: white;
 
 
 
-
 .hero-full-screen {
   min-height: 100%;
   display: flex;
@@ -105,8 +104,14 @@ $hero-full-screen-text-color: white;
 
 
 //email svg
-svg{
+#bottom-svg{
    max-width: 1000px;
+}
+
+//top svg
+#top-svg{
+  max-width: 400px;
+ 
 }
 
 //main area styling 
@@ -156,24 +161,70 @@ body{
 	max-width: 1000px;
 }
 
-//bottom contact styling footer
+//top contact styling footer
 .icons{
     list-style: none;
     display: flex;
     margin: 0;
     justify-content: center;
     li{
-        padding: 0 10px;
-        font-size: 3rem;
-        span{
-            color: darken(#c0362c, 10%) ;
-            transition:  transform .4s ease;
-            &:hover{
-              transform: scale(1.3) rotate(10deg);
-            }
+        // padding: 0 10px;
+        // font-size: 3rem;
+        // span{
+        //     color: darken(#c0362c, 10%) ;
+        //     transition:  transform .4s ease;
+        //     &:hover{
+        //       transform: scale(1.3) rotate(10deg);
+
+
+            // }
+// }
+        border: 2px solid #fff;width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 50%;
+        position: relative;
+        font-size: 30px;
+        margin-left: 3px;
+        margin-right: 3px;
+
+        &:hover a {
+          color: #FB5660;
+
+        }
+
+        &:after{
+          position: absolute;
+          content: "";
+          top: 3px;
+          right: 3px;
+          bottom: 3px;
+          left: 3px;
+          background: #fff;
+          border-radius: 50%;
+          transform-origin: 50% 50%;
+          transform: scale(0);
+          transition: all .35s;
+        }
+        &:hover:after{
+          transform: scale(1);
+        }
+        a {
+          display: block;
+          text-decoration: none;
+          position: relative;
+          z-index: 1;
+          color: #fff;
+          text-shadow: 2px 2px 1px rgba(0,0,0,.4);
+          transition: all .35s;
+          bottom: 3px;
+
+
+        }
 }
 }
-}
+
+
 
 .bottom-content-section{
     width: 100%;
