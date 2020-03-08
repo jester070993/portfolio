@@ -49,6 +49,7 @@ $hero-full-screen-text-color: white;
   .bottom-content-section {
     padding: 1rem;
     padding-top: 0;
+    padding-bottom: .5rem;
 
     svg {
       height: rem-calc(60);
@@ -206,7 +207,7 @@ body{
         margin-right: 3px;
 
         &:hover a {
-          color: #FB5660;
+          color: white;
 
         }
 
@@ -217,7 +218,7 @@ body{
           right: 3px;
           bottom: 3px;
           left: 3px;
-          background: #fff;
+          background: salmon;
           border-radius: 50%;
           transform-origin: 50% 50%;
           transform: scale(0);
@@ -393,4 +394,32 @@ h1{
       }
 
   }
+}
+
+.resumeLink{
+  margin-bottom: 0;
+  padding: 0;
+  padding-top: .5rem;
+  font-weight: 900;
+  position: relative;
+
+  &a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  &a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
 }
